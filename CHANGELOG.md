@@ -2,6 +2,17 @@
 
 Alle wijzigingen aan Pitwall. Versie blijft 1.0.0; elk nieuw build krijgt een hoger buildnummer.
 
+## 1.0.0 (build 2) — 12 oktober 2026
+
+- Nieuw: Pitwall-account (verplicht), met inloggen, account maken, wachtwoord vergeten en account verwijderen
+- Nieuw: Apple TV inloggen met QR-code of koppelcode, zoals Netflix; bevestigen op je iPhone, iPad of Mac
+- Nieuw: Tv koppelen via Account › Tv koppelen, of door de QR-code met je camera te scannen
+- Nieuw: Apparatenbeheer: gekoppelde apparaten zien, hernoemen en verwijderen (verwijderd apparaat logt uit), met een apparatenlimiet
+- Nieuw: Synchronisatie via je account en iCloud: F1 TV-login, instellingen en multiview-setups
+- Nieuw: Apple TV neemt de F1 TV-login automatisch over van je telefoon of Mac
+- Nieuw: Supabase-backend in de repo (schema, Edge Function, deploy-workflow)
+- Verbeterd: Apple TV-tabbalk met tabblad Meer, zodat Account en Instellingen altijd bereikbaar zijn
+
 ## 1.0.0 (build 1) — 12 oktober 2026
 
 Eerste versie.

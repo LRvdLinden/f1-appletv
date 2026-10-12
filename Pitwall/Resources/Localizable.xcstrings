@@ -2,6 +2,46 @@
   "sourceLanguage": "nl",
   "version": "1.0",
   "strings": {
+    "%@ is nu ingelogd.": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@ is now signed in."
+          }
+        }
+      }
+    },
+    "%@ verwijderen? Het apparaat wordt uitgelogd.": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Remove %@? It will be signed out."
+          }
+        }
+      }
+    },
+    "%lld min geleden": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%lld min ago"
+          }
+        }
+      }
+    },
+    "%lld van %lld apparaten": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%lld of %lld devices"
+          }
+        }
+      }
+    },
     "10 s terug": {
       "localizations": {
         "en": {
@@ -38,6 +78,36 @@
           "stringUnit": {
             "state": "translated",
             "value": "Account"
+          }
+        }
+      }
+    },
+    "Account maken": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Create account"
+          }
+        }
+      }
+    },
+    "Account verwijderen": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Delete account"
+          }
+        }
+      }
+    },
+    "Accounts zijn niet ingesteld in deze build.": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Accounts are not configured in this build."
           }
         }
       }
@@ -82,6 +152,16 @@
         }
       }
     },
+    "Als er een account bestaat, ontvang je een e-mail om je wachtwoord opnieuw in te stellen.": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "If an account exists, you'll receive an email to reset your password."
+          }
+        }
+      }
+    },
     "Altijd vragen": {
       "localizations": {
         "en": {
@@ -98,6 +178,16 @@
           "stringUnit": {
             "state": "translated",
             "value": "Cancel"
+          }
+        }
+      }
+    },
+    "Apparaten": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Devices"
           }
         }
       }
@@ -162,6 +252,26 @@
         }
       }
     },
+    "Bevestig eerst je e-mailadres. Kijk in je inbox.": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Confirm your email address first. Check your inbox."
+          }
+        }
+      }
+    },
+    "Bewaar": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Save"
+          }
+        }
+      }
+    },
     "Bewaart de geopende feeds en de indeling, zodat je ze bij een volgende sessie in één keer opent.": {
       "localizations": {
         "en": {
@@ -222,6 +332,16 @@
         }
       }
     },
+    "DIT APPARAAT": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "THIS DEVICE"
+          }
+        }
+      }
+    },
     "De Apple TV heeft niet bevestigd. Controleer de code.": {
       "localizations": {
         "en": {
@@ -242,12 +362,62 @@
         }
       }
     },
+    "Deze code is ongeldig of verlopen.": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "That code is invalid or has expired."
+          }
+        }
+      }
+    },
     "Deze stream is niet beschikbaar voor je abonnement.": {
       "localizations": {
         "en": {
           "stringUnit": {
             "state": "translated",
             "value": "This stream isn't available with your subscription."
+          }
+        }
+      }
+    },
+    "Doorgaan zonder account": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Continue without account"
+          }
+        }
+      }
+    },
+    "E-mail": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Email"
+          }
+        }
+      }
+    },
+    "Er bestaat al een account met dit e-mailadres.": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "An account with this email already exists."
+          }
+        }
+      }
+    },
+    "Er ging iets mis. Probeer het opnieuw.": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Something went wrong. Please try again."
           }
         }
       }
@@ -352,12 +522,82 @@
         }
       }
     },
+    "Ga naar Account › Naar Apple TV in dit netwerk.": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Go to Account › Send to Apple TV on this network."
+          }
+        }
+      }
+    },
+    "Geen internetverbinding.": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "No internet connection."
+          }
+        }
+      }
+    },
+    "Gekoppeld %@": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Linked %@"
+          }
+        }
+      }
+    },
+    "Heb je al een account?": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Already have an account?"
+          }
+        }
+      }
+    },
+    "Hernoemen": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Rename"
+          }
+        }
+      }
+    },
+    "Herstellink versturen": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Send reset link"
+          }
+        }
+      }
+    },
     "Het antwoord van F1 TV kon niet worden gelezen.": {
       "localizations": {
         "en": {
           "stringUnit": {
             "state": "translated",
             "value": "F1 TV's response couldn't be read."
+          }
+        }
+      }
+    },
+    "Het wachtwoord moet minstens 6 tekens hebben.": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Password must be at least 6 characters."
           }
         }
       }
@@ -412,6 +652,16 @@
         }
       }
     },
+    "Inloggen": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sign In"
+          }
+        }
+      }
+    },
     "Inloggen bij F1": {
       "localizations": {
         "en": {
@@ -438,6 +688,26 @@
           "stringUnit": {
             "state": "translated",
             "value": "Sign in with F1 TV"
+          }
+        }
+      }
+    },
+    "Inloggen met e-mail": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sign in with email"
+          }
+        }
+      }
+    },
+    "Inloggen met je telefoon": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sign in with your phone"
           }
         }
       }
@@ -502,12 +772,72 @@
         }
       }
     },
+    "Je Apple TV logt in met je Pitwall-account en krijgt meteen je F1 TV-login, instellingen en setups.": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Your Apple TV signs in with your Pitwall account and immediately gets your F1 TV sign-in, settings and setups."
+          }
+        }
+      }
+    },
     "Je F1 TV-sessie is verlopen. Log opnieuw in.": {
       "localizations": {
         "en": {
           "stringUnit": {
             "state": "translated",
             "value": "Your F1 TV session has expired. Please sign in again."
+          }
+        }
+      }
+    },
+    "Je Pitwall-account verwijderen? Dit kan niet ongedaan worden gemaakt.": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Delete your Pitwall account? This can't be undone."
+          }
+        }
+      }
+    },
+    "Je account kan op maximaal %lld apparaten tegelijk worden gebruikt. Verwijder een apparaat om op dit apparaat in te loggen.": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Your account can be used on up to %lld devices. Remove a device to sign in on this one."
+          }
+        }
+      }
+    },
+    "Je bent niet ingelogd.": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "You're not signed in."
+          }
+        }
+      }
+    },
+    "Je e-mailadres is bevestigd. Je kunt nu inloggen.": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Your email address is confirmed. You can sign in now."
+          }
+        }
+      }
+    },
+    "Je logt in op de officiële F1-pagina. Pitwall bewaart alleen de sessie, nooit je wachtwoord.": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "You sign in on the official F1 page. Pitwall only keeps the session, never your password."
           }
         }
       }
@@ -548,6 +878,16 @@
           "stringUnit": {
             "state": "translated",
             "value": "Pick up to 9 feeds. The feed with the speaker icon has sound; select a tile to switch audio."
+          }
+        }
+      }
+    },
+    "Kijk in je inbox om je e-mailadres te bevestigen en log daarna in.": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Check your inbox to confirm your email address, then sign in."
           }
         }
       }
@@ -612,6 +952,16 @@
         }
       }
     },
+    "Laatst gebruikt %@": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Last used %@"
+          }
+        }
+      }
+    },
     "Laden…": {
       "localizations": {
         "en": {
@@ -652,6 +1002,16 @@
         }
       }
     },
+    "Log in bij F1 TV op je iPhone, iPad of Mac met hetzelfde Pitwall-account; deze Apple TV neemt de login vanzelf over. Of koppel via je netwerk:": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sign in to F1 TV on your iPhone, iPad or Mac with the same Pitwall account; this Apple TV picks up the sign-in automatically. Or link over your network:"
+          }
+        }
+      }
+    },
     "Log in met F1 TV": {
       "localizations": {
         "en": {
@@ -668,6 +1028,36 @@
           "stringUnit": {
             "state": "translated",
             "value": "Sign in with your F1 TV account to watch this."
+          }
+        }
+      }
+    },
+    "Log in op je iPhone, iPad of Mac met hetzelfde Pitwall-account; deze Apple TV neemt de F1 TV-login dan vanzelf over. Of koppel via je netwerk:": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sign in on your iPhone, iPad or Mac with the same Pitwall account; this Apple TV then picks up the F1 TV sign-in automatically. Or link over your network:"
+          }
+        }
+      }
+    },
+    "Log in.": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sign in."
+          }
+        }
+      }
+    },
+    "Maak een account.": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sign up now."
           }
         }
       }
@@ -698,6 +1088,16 @@
           "stringUnit": {
             "state": "translated",
             "value": "My setup"
+          }
+        }
+      }
+    },
+    "Minstens 6 tekens. Daarna ben je op alle andere apparaten uitgelogd.": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "At least 6 characters. You'll be signed out on all other devices."
           }
         }
       }
@@ -742,12 +1142,52 @@
         }
       }
     },
+    "Naam van het apparaat": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Device name"
+          }
+        }
+      }
+    },
+    "Naar Apple TV in dit netwerk": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Send to Apple TV on this network"
+          }
+        }
+      }
+    },
     "Naast elkaar": {
       "localizations": {
         "en": {
           "stringUnit": {
             "state": "translated",
             "value": "Side by side"
+          }
+        }
+      }
+    },
+    "Nieuw bij Pitwall?": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "New to Pitwall?"
+          }
+        }
+      }
+    },
+    "Nieuw wachtwoord": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "New password"
           }
         }
       }
@@ -772,6 +1212,26 @@
         }
       }
     },
+    "OF": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "OR"
+          }
+        }
+      }
+    },
+    "Of open Pitwall op je iPhone, iPad of Mac › Account › Tv koppelen en vul deze code in:": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Or open Pitwall on your iPhone, iPad or Mac › Account › Link a TV and enter this code:"
+          }
+        }
+      }
+    },
     "Ondertitels": {
       "localizations": {
         "en": {
@@ -788,6 +1248,16 @@
           "stringUnit": {
             "state": "translated",
             "value": "Invalid link."
+          }
+        }
+      }
+    },
+    "Onjuist e-mailadres of wachtwoord.": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Incorrect email or password."
           }
         }
       }
@@ -818,6 +1288,16 @@
           "stringUnit": {
             "state": "translated",
             "value": "Retry"
+          }
+        }
+      }
+    },
+    "Opnieuw inloggen": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sign in again"
           }
         }
       }
@@ -862,6 +1342,16 @@
         }
       }
     },
+    "Pitwall gebruikt je eigen F1 TV-abonnement. Log één keer in; via je account en iCloud zijn je andere apparaten daarna ook ingelogd.": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Pitwall uses your own F1 TV subscription. Sign in once; your account and iCloud sign in your other devices too."
+          }
+        }
+      }
+    },
     "Pitwall gebruikt je eigen F1 TV-abonnement. Welke streams, onboards en kwaliteit je ziet hangt af van dat abonnement.": {
       "localizations": {
         "en": {
@@ -902,12 +1392,32 @@
         }
       }
     },
+    "Pitwall-account": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Pitwall account"
+          }
+        }
+      }
+    },
     "Programma": {
       "localizations": {
         "en": {
           "stringUnit": {
             "state": "translated",
             "value": "Schedule"
+          }
+        }
+      }
+    },
+    "Scan de QR-code met de camera van je telefoon": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Scan the QR code with your phone's camera"
           }
         }
       }
@@ -1052,6 +1562,16 @@
         }
       }
     },
+    "Te veel apparaten": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Too many devices"
+          }
+        }
+      }
+    },
     "Teamradio / omgevingsgeluid": {
       "localizations": {
         "en": {
@@ -1072,6 +1592,26 @@
         }
       }
     },
+    "Toon": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Show"
+          }
+        }
+      }
+    },
+    "Tv koppelen": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Link a TV"
+          }
+        }
+      }
+    },
     "Uitloggen": {
       "localizations": {
         "en": {
@@ -1082,12 +1622,42 @@
         }
       }
     },
+    "Uitloggen bij F1 TV": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sign out of F1 TV"
+          }
+        }
+      }
+    },
     "Uitloggen bij F1 TV?": {
       "localizations": {
         "en": {
           "stringUnit": {
             "state": "translated",
             "value": "Sign out of F1 TV?"
+          }
+        }
+      }
+    },
+    "Uitloggen bij F1 TV? Dit geldt voor al je gekoppelde apparaten.": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sign out of F1 TV? This applies to all your linked devices."
+          }
+        }
+      }
+    },
+    "Uitloggen bij Pitwall op dit apparaat?": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sign out of Pitwall on this device?"
           }
         }
       }
@@ -1108,6 +1678,16 @@
           "stringUnit": {
             "state": "translated",
             "value": "From the beginning"
+          }
+        }
+      }
+    },
+    "Verberg": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Hide"
           }
         }
       }
@@ -1152,12 +1732,52 @@
         }
       }
     },
+    "Verwijderen": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Remove"
+          }
+        }
+      }
+    },
     "Voeg toe aan multiview": {
       "localizations": {
         "en": {
           "stringUnit": {
             "state": "translated",
             "value": "Add to multiview"
+          }
+        }
+      }
+    },
+    "Vul de Supabase-URL en publishable key in AccountConfig.swift in om inloggen te activeren.": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Fill in the Supabase URL and publishable key in AccountConfig.swift to enable sign-in."
+          }
+        }
+      }
+    },
+    "Vul de code in die op je tv staat": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Enter the code shown on your TV"
+          }
+        }
+      }
+    },
+    "Vul een geldig e-mailadres in.": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Enter a valid email address."
           }
         }
       }
@@ -1172,12 +1792,52 @@
         }
       }
     },
+    "Wachten op bevestiging…": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Waiting for confirmation…"
+          }
+        }
+      }
+    },
     "Wachten op je iPhone, iPad of Mac…": {
       "localizations": {
         "en": {
           "stringUnit": {
             "state": "translated",
             "value": "Waiting for your iPhone, iPad or Mac…"
+          }
+        }
+      }
+    },
+    "Wachtwoord": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Password"
+          }
+        }
+      }
+    },
+    "Wachtwoord herstellen": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Reset password"
+          }
+        }
+      }
+    },
+    "Wachtwoord vergeten?": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Forgot password?"
           }
         }
       }
@@ -1208,6 +1868,66 @@
           "stringUnit": {
             "state": "translated",
             "value": "Searching…"
+          }
+        }
+      }
+    },
+    "Zonder account: instellingen en F1 TV-login gaan alleen via iCloud mee.": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Without an account, settings and F1 TV sign-in only sync via iCloud."
+          }
+        }
+      }
+    },
+    "gisteren": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "yesterday"
+          }
+        }
+      }
+    },
+    "iCloud niet beschikbaar; sync loopt via je account": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "iCloud unavailable; syncing via your account"
+          }
+        }
+      }
+    },
+    "iCloud-sync staat aan": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "iCloud sync is on"
+          }
+        }
+      }
+    },
+    "nu": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "now"
+          }
+        }
+      }
+    },
+    "zojuist": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "just now"
           }
         }
       }

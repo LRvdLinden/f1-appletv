@@ -12,7 +12,7 @@
 <p align="center">
   <img alt="Build" src="https://github.com/LRvdLinden/f1-appletv/actions/workflows/build.yml/badge.svg">
   <img alt="Platforms" src="https://img.shields.io/badge/platforms-tvOS%2017%20%7C%20iOS%2017%20%7C%20macOS%2014-red">
-  <img alt="Versie" src="https://img.shields.io/badge/versie-1.0.0-informational">
+  <img alt="Versie" src="https://img.shields.io/badge/versie-1.0.0%20(build%202)-informational">
 </p>
 
 ## Screenshots
@@ -37,14 +37,24 @@
 - **Native per platform** – tvOS-transportbalk met feeds en multiview, picture-in-picture op iPhone/iPad, zijpaneel en sneltoetsen op de Mac.
 - **Nederlands en Engels**.
 
-## Inloggen
+## Pitwall-account
+
+Pitwall heeft een eigen account (Supabase), net als Bingr. Daarmee:
+
+- log je een **Apple TV** in met een **QR-code**: scan hem met je telefooncamera en bevestig in Pitwall, of vul de code in bij Account › Tv koppelen;
+- gaan je **F1 TV-login, instellingen en multiview-setups** mee naar al je apparaten, via het account én iCloud;
+- beheer je je **apparaten** (hernoemen, verwijderen; een verwijderd apparaat logt uit).
+
+Het contract staat in [docs/ACCOUNT.md](docs/ACCOUNT.md), de backend in `supabase/`. De workflow *Backend* zet alles klaar zodra de repo-secrets `SUPABASE_ACCESS_TOKEN` en `SUPABASE_PROJECT_REF` er zijn.
+
+## Inloggen bij F1 TV
 
 **iPhone, iPad en Mac** – Account › *Inloggen met F1 TV*. Je logt in op de officiële F1-pagina; Pitwall bewaart alleen de sessie in je sleutelhanger, nooit je wachtwoord.
 
-**Apple TV** – tvOS heeft geen browser, dus de Apple TV krijgt de login van je iPhone, iPad of Mac:
+**Apple TV** – neemt de F1 TV-login automatisch over via je Pitwall-account of iCloud. Zonder account kan het ook rechtstreeks in je netwerk:
 
 1. Open Pitwall op de Apple TV en ga naar **Account**. Er verschijnt een 6-cijferige code.
-2. Open Pitwall op je iPhone, iPad of Mac › **Account** › **Apple TV koppelen**.
+2. Open Pitwall op je iPhone, iPad of Mac › **Account** › **Naar Apple TV in dit netwerk**.
 3. Kies de Apple TV en vul de code in.
 
 De code is de sleutel van een versleutelde verbinding (TLS met pre-shared key) in je eigen netwerk; beide apparaten moeten op hetzelfde wifi zitten.
@@ -63,7 +73,10 @@ Het is één multiplatform-target: alle Swift-bestanden in `Pitwall/` horen auto
 | --- | --- |
 | `Pitwall/Core/Networking` | HTTP-client, F1 TV-endpoints en JSON-modellen |
 | `Pitwall/Core/Catalog` | Menu, pagina's en mapping naar app-modellen |
-| `Pitwall/Core/Auth` | Sessie, sleutelhanger, web-login en Apple TV-koppeling |
+| `Pitwall/Core/Auth` | F1 TV-sessie, sleutelhanger, web-login en koppeling in je netwerk |
+| `Pitwall/Core/Account` | Pitwall-account (Supabase), tv-koppeling en apparaten |
+| `Pitwall/Core/Sync` | Sync van F1 TV-login, instellingen en setups via account en iCloud |
+| `supabase/` | Database-schema en Edge Function `device-auth` |
 | `Pitwall/Core/Playback` | Entitlements, FairPlay, feeds en multiview-sessie |
 | `Pitwall/UI` | SwiftUI-schermen per onderdeel |
 | `Tools/` | Scripts voor project, iconen en vertalingen |
