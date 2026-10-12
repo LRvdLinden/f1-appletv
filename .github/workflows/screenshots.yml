@@ -36,9 +36,10 @@ jobs:
             APP=$(ls -d build/Build/Products/Debug-$2/Pitwall.app)
             xcrun simctl boot "$UDID" || true
             xcrun simctl bootstatus "$UDID" -b
+            [ "$2" = "appletvsimulator" ] && sleep 90
             xcrun simctl install "$UDID" "$APP"
             xcrun simctl launch "$UDID" nl.lrvdlinden.pitwall -AppleLanguages "(nl)" -AppleLocale nl_NL
-            sleep 35
+            sleep 45
             xcrun simctl io "$UDID" screenshot "Screenshots/$1.png"
             xcrun simctl shutdown "$UDID" || true
           }
