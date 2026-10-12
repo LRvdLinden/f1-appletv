@@ -2,6 +2,10 @@
 
 Alle wijzigingen aan Pitwall. Versie blijft 1.0.0; elk nieuw build krijgt een hoger buildnummer.
 
+## 1.0.0 (build 3) — 12 oktober 2026
+
+- Verbeterd: Pitwall-accounts staan aan (eigen Supabase-project gekoppeld)
+
 ## 1.0.0 (build 2) — 12 oktober 2026
 
 - Nieuw: Pitwall-account (verplicht), met inloggen, account maken, wachtwoord vergeten en account verwijderen

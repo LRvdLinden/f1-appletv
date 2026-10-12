@@ -12,7 +12,7 @@
 <p align="center">
   <img alt="Build" src="https://github.com/LRvdLinden/f1-appletv/actions/workflows/build.yml/badge.svg">
   <img alt="Platforms" src="https://img.shields.io/badge/platforms-tvOS%2017%20%7C%20iOS%2017%20%7C%20macOS%2014-red">
-  <img alt="Versie" src="https://img.shields.io/badge/versie-1.0.0%20(build%202)-informational">
+  <img alt="Versie" src="https://img.shields.io/badge/versie-1.0.0%20(build%203)-informational">
 </p>
 
 ## Screenshots

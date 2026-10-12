@@ -6,8 +6,8 @@ import Security
 /// Zijn ze leeg, dan toont het inlogscherm "Accounts zijn niet ingesteld in deze build"
 /// met een knop om zonder account door te gaan.
 enum AccountConfig {
-    static let supabaseURL = ""
-    static let supabaseAnonKey = ""
+    static let supabaseURL = "https://zqkqeloraogowzgdjzpr.supabase.co"
+    static let supabaseAnonKey = "sb_publishable_CbiaygVoY6jjbcq4FDR4Yw_poUWLKIG"
 
     static var isConfigured: Bool {
         URL(string: supabaseURL)?.host != nil && !supabaseAnonKey.isEmpty
