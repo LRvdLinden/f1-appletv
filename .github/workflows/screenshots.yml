@@ -1,0 +1,56 @@
+name: Screenshots
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  shots:
+    runs-on: macos-15
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Select newest Xcode
+        run: sudo xcode-select -s "$(ls -d /Applications/Xcode_*.app | sort -V | tail -1)"
+
+      - name: Ensure simulator runtimes
+        run: |
+          xcrun simctl list runtimes | grep -q tvOS || xcodebuild -downloadPlatform tvOS
+          xcrun simctl list runtimes
+
+      - name: Capture
+        run: |
+          set -x
+          mkdir -p Screenshots
+          pick() { xcrun simctl list devices available -j | python3 -c "
+          import json,sys
+          d=json.load(sys.stdin)['devices']; want=sys.argv[1]; rt=sys.argv[2]
+          c=[x for k,v in d.items() if rt in k for x in v if want in x['name']]
+          print(sorted(c,key=lambda x:x['name'])[-1]['udid'] if c else '')" "$1" "$2"; }
+          shoot() {  # name platform-sdk device-filter runtime-filter
+            UDID=$(pick "$3" "$4"); [ -z "$UDID" ] && { echo "no device for $1"; return; }
+            xcodebuild build -project Pitwall.xcodeproj -scheme Pitwall -configuration Debug \
+              -destination "id=$UDID" -derivedDataPath build CODE_SIGNING_ALLOWED=NO -quiet || return
+            APP=$(ls -d build/Build/Products/Debug-$2/Pitwall.app)
+            xcrun simctl boot "$UDID" || true
+            xcrun simctl bootstatus "$UDID" -b
+            xcrun simctl install "$UDID" "$APP"
+            xcrun simctl launch "$UDID" nl.lrvdlinden.pitwall -AppleLanguages "(nl)" -AppleLocale nl_NL
+            sleep 35
+            xcrun simctl io "$UDID" screenshot "Screenshots/$1.png"
+            xcrun simctl shutdown "$UDID" || true
+          }
+          shoot appletv appletvsimulator "Apple TV 4K" tvOS
+          shoot iphone iphonesimulator "iPhone 16 Pro" iOS
+          shoot ipad iphonesimulator "iPad Pro" iOS
+          ls -la Screenshots
+
+      - name: Commit screenshots
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add Screenshots
+          git commit -m "Update screenshots [skip ci]" || exit 0
+          git push
