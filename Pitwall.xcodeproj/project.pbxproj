@@ -10,6 +10,7 @@
 		2C090C541E206D79AB76701F /* Pitwall.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Pitwall.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		34A0463128B669559EE96BBF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EAC91D16CE8C7BDAD8B56F7E /* Pitwall-macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Pitwall-macOS.entitlements"; sourceTree = "<group>"; };
+		4F606B91A1654BA542971E27 /* Pitwall.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Pitwall.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -41,6 +42,7 @@
 			children = (
 				34A0463128B669559EE96BBF /* Info.plist */,
 				EAC91D16CE8C7BDAD8B56F7E /* Pitwall-macOS.entitlements */,
+				4F606B91A1654BA542971E27 /* Pitwall.entitlements */,
 			);
 			path = Config;
 			sourceTree = "<group>";
@@ -199,9 +201,10 @@
 				"ASSETCATALOG_COMPILER_APPICON_NAME[sdk=appletvos*]" = "App Icon & Top Shelf Image";
 				"ASSETCATALOG_COMPILER_APPICON_NAME[sdk=appletvsimulator*]" = "App Icon & Top Shelf Image";
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Config/Pitwall.entitlements;
 				"CODE_SIGN_ENTITLEMENTS[sdk=macosx*]" = "Config/Pitwall-macOS.entitlements";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_TEAM = EU3UY476T6;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
@@ -246,9 +249,10 @@
 				"ASSETCATALOG_COMPILER_APPICON_NAME[sdk=appletvos*]" = "App Icon & Top Shelf Image";
 				"ASSETCATALOG_COMPILER_APPICON_NAME[sdk=appletvsimulator*]" = "App Icon & Top Shelf Image";
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Config/Pitwall.entitlements;
 				"CODE_SIGN_ENTITLEMENTS[sdk=macosx*]" = "Config/Pitwall-macOS.entitlements";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_TEAM = EU3UY476T6;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;

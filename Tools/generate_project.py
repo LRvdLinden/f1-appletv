@@ -26,7 +26,7 @@ TEAM = "EU3UY476T6"
 BUNDLE = "nl.lrvdlinden.pitwall"
 
 I = {k: oid(k) for k in [
-    "project", "mainGroup", "productsGroup", "configGroup", "syncGroup", "appRef", "infoRef", "entRef",
+    "project", "mainGroup", "productsGroup", "configGroup", "syncGroup", "appRef", "infoRef", "entRef", "ent2Ref",
     "target", "sources", "frameworks", "resources", "projList", "targetList",
     "projDebug", "projRelease", "targetDebug", "targetRelease"]}
 
@@ -71,6 +71,7 @@ target_settings = f"""				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				"ASSETCATALOG_COMPILER_APPICON_NAME[sdk=appletvos*]" = "App Icon & Top Shelf Image";
 				"ASSETCATALOG_COMPILER_APPICON_NAME[sdk=appletvsimulator*]" = "App Icon & Top Shelf Image";
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Config/Pitwall.entitlements;
 				"CODE_SIGN_ENTITLEMENTS[sdk=macosx*]" = "Config/Pitwall-macOS.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = {BUILD};
@@ -122,6 +123,7 @@ pbx = f"""// !$*UTF8*$!
 		{I['appRef']} /* Pitwall.app */ = {{isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Pitwall.app; sourceTree = BUILT_PRODUCTS_DIR; }};
 		{I['infoRef']} /* Info.plist */ = {{isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; }};
 		{I['entRef']} /* Pitwall-macOS.entitlements */ = {{isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Pitwall-macOS.entitlements"; sourceTree = "<group>"; }};
+		{I['ent2Ref']} /* Pitwall.entitlements */ = {{isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Pitwall.entitlements; sourceTree = "<group>"; }};
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -153,6 +155,7 @@ pbx = f"""// !$*UTF8*$!
 			children = (
 				{I['infoRef']} /* Info.plist */,
 				{I['entRef']} /* Pitwall-macOS.entitlements */,
+				{I['ent2Ref']} /* Pitwall.entitlements */,
 			);
 			path = Config;
 			sourceTree = "<group>";

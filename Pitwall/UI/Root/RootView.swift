@@ -14,11 +14,15 @@ struct RootView: View {
             .preferredColorScheme(.dark)
             .task {
                 await model.loadMenu()
-                await model.account.refreshIfNeeded()
+                await model.resume()
             }
             .onChange(of: scenePhase) {
-                if scenePhase == .active { Task { await model.account.refreshIfNeeded() } }
+                if scenePhase == .active { Task { await model.resume() } }
             }
+            .onChange(of: model.settings.catalogLanguage) {
+                Task { await model.languageChanged() }
+            }
+            .onOpenURL { model.handle($0) }
             #if os(macOS)
             .onChange(of: model.activePlayback) {
                 if let request = model.activePlayback {
@@ -35,7 +39,14 @@ struct RootView: View {
             .sheet(isPresented: $model.showLogin) {
                 #if os(tvOS)
                 NavigationStack {
-                    ScrollView { TVPairingView().padding(60) }
+                    ScrollView {
+                        VStack(alignment: .leading, spacing: 30) {
+                            Text("Log in bij F1 TV op je iPhone, iPad of Mac met hetzelfde Pitwall-account; deze Apple TV neemt de login vanzelf over. Of koppel via je netwerk:")
+                                .foregroundStyle(.secondary)
+                            TVPairingView()
+                        }
+                        .padding(60)
+                    }
                 }
                 .onChange(of: model.account.isSignedIn) {
                     if model.account.isSignedIn { model.showLogin = false }
@@ -45,16 +56,34 @@ struct RootView: View {
                 #endif
             }
             #endif
+            #if !os(tvOS)
+            .sheet(item: $model.recovery) { link in
+                ResetPasswordSheet(link: link).environment(model)
+            }
+            .sheet(isPresented: Binding(
+                get: { model.pendingLinkCode != nil && model.pitwall.phase == .signedIn },
+                set: { if !$0 { model.pendingLinkCode = nil } }
+            )) {
+                LinkTVSheet(code: model.pendingLinkCode ?? "").environment(model)
+            }
+            #endif
     }
 
     @ViewBuilder private var content: some View {
-        if model.menu.isEmpty {
+        if model.menu.isEmpty && model.menuError == nil && model.isLoadingMenu {
+            SplashView()
+        } else if !model.pitwall.mayUseApp {
+            if case .deviceLimit(let limit, let devices) = model.pitwall.phase {
+                DeviceLimitScreen(limit: limit, devices: devices)
+            } else {
+                AuthScreen()
+            }
+        } else if model.menu.isEmpty {
             if let error = model.menuError {
                 ErrorStateView(message: error) { Task { await model.loadMenu(force: true) } }
                     .background(Theme.background)
             } else {
-                LoadingView(title: "F1 TV laden…")
-                    .background(Theme.background)
+                SplashView()
             }
         } else {
             #if os(macOS)
@@ -62,6 +91,18 @@ struct RootView: View {
             #else
             TabLayout()
             #endif
+        }
+    }
+}
+
+struct SplashView: View {
+    var body: some View {
+        ZStack {
+            Theme.background.ignoresSafeArea()
+            VStack(spacing: 24) {
+                PitwallWordmark()
+                ProgressView()
+            }
         }
     }
 }

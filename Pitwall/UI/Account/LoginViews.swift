@@ -139,7 +139,7 @@ struct SendToTVSheet: View {
                 }
             }
             .formStyle(.grouped)
-            .navigationTitle("Apple TV koppelen")
+            .navigationTitle("Naar Apple TV in dit netwerk")
             .toolbar {
                 ToolbarItem(placement: .confirmationAction) {
                     Button("Klaar") { dismiss() }
@@ -167,7 +167,7 @@ struct TVPairingView: View {
                 Text("Inloggen via je iPhone, iPad of Mac").font(.title3.bold())
                 VStack(alignment: .leading, spacing: 12) {
                     step(1, "Installeer Pitwall op je iPhone, iPad of Mac en log daar in met F1 TV.")
-                    step(2, "Ga naar Account › Apple TV koppelen.")
+                    step(2, "Ga naar Account › Naar Apple TV in dit netwerk.")
                     step(3, "Kies deze Apple TV en vul de code in.")
                 }
                 .foregroundStyle(.secondary)

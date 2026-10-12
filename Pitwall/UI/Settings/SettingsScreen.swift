@@ -50,7 +50,7 @@ struct SettingsScreen: View {
                                 .foregroundStyle(.secondary)
                             #if os(tvOS) || os(macOS)
                             Button(role: .destructive) {
-                                model.savedSetups.removeAll { $0.id == setup.id }
+                                model.deleteSetup(setup)
                             } label: {
                                 Image(systemName: "trash")
                             }
@@ -76,9 +76,6 @@ struct SettingsScreen: View {
             }
             .formStyle(.grouped)
             .navigationTitle("Instellingen")
-            .onChange(of: settings.catalogLanguage) {
-                Task { await model.languageChanged() }
-            }
         }
     }
 

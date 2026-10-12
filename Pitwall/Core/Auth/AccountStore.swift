@@ -13,6 +13,8 @@ final class AccountStore {
     @ObservationIgnored private let client = HTTPClient.shared
     @ObservationIgnored private let playbackSessionID = UUID().uuidString
     @ObservationIgnored private var refreshTask: Task<F1Session, Error>?
+    /// Login, logout of vernieuwd token: de sync stuurt het door naar andere apparaten.
+    @ObservationIgnored var onSessionChange: (() -> Void)?
 
     var isSignedIn: Bool { session != nil }
     private var endpoints: F1Endpoints { F1Endpoints(language: language) }
@@ -26,12 +28,14 @@ final class AccountStore {
         session = newSession
         sessionExpired = false
         KeychainStore.save(newSession)
+        onSessionChange?()
     }
 
     func signOut() {
         session = nil
         sessionExpired = false
         KeychainStore.clear()
+        onSessionChange?()
     }
 
     /// Refreshes the token when it expires within a day. Called at launch and on foreground.

@@ -1,0 +1,4 @@
+project_id = "pitwall"
+
+[functions.device-auth]
+verify_jwt = false

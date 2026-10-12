@@ -86,14 +86,14 @@ enum StreamQuality: String, CaseIterable, Identifiable, Codable {
 final class AppSettings {
     @ObservationIgnored private let defaults = UserDefaults.standard
 
-    var catalogLanguage: CatalogLanguage { didSet { save(catalogLanguage.rawValue, "catalogLanguage") } }
-    var audioLanguage: CatalogLanguage { didSet { save(audioLanguage.rawValue, "audioLanguage") } }
-    var liveStart: LiveStart { didSet { save(liveStart.rawValue, "liveStart") } }
-    var defaultFeed: DefaultFeed { didSet { save(defaultFeed.rawValue, "defaultFeed") } }
-    var quality: StreamQuality { didSet { save(quality.rawValue, "quality") } }
-    var multiviewQuality: StreamQuality { didSet { save(multiviewQuality.rawValue, "multiviewQuality") } }
-    var reportProgress: Bool { didSet { defaults.set(reportProgress, forKey: "reportProgress") } }
-    var showCaptions: Bool { didSet { defaults.set(showCaptions, forKey: "showCaptions") } }
+    var catalogLanguage: CatalogLanguage { didSet { changed(); save(catalogLanguage.rawValue, "catalogLanguage") } }
+    var audioLanguage: CatalogLanguage { didSet { changed(); save(audioLanguage.rawValue, "audioLanguage") } }
+    var liveStart: LiveStart { didSet { changed(); save(liveStart.rawValue, "liveStart") } }
+    var defaultFeed: DefaultFeed { didSet { changed(); save(defaultFeed.rawValue, "defaultFeed") } }
+    var quality: StreamQuality { didSet { changed(); save(quality.rawValue, "quality") } }
+    var multiviewQuality: StreamQuality { didSet { changed(); save(multiviewQuality.rawValue, "multiviewQuality") } }
+    var reportProgress: Bool { didSet { changed(); defaults.set(reportProgress, forKey: "reportProgress") } }
+    var showCaptions: Bool { didSet { changed(); defaults.set(showCaptions, forKey: "showCaptions") } }
 
     init() {
         let d = UserDefaults.standard
@@ -109,6 +109,34 @@ final class AppSettings {
     }
 
     private func save(_ value: String, _ key: String) { defaults.set(value, forKey: key) }
+
+    /// Elke wijziging gaat via de sync naar andere apparaten.
+    @ObservationIgnored var onChange: (() -> Void)?
+    private func changed() { onChange?() }
+
+    var snapshot: [String: Any] {
+        [
+            "catalogLanguage": catalogLanguage.rawValue,
+            "audioLanguage": audioLanguage.rawValue,
+            "liveStart": liveStart.rawValue,
+            "defaultFeed": defaultFeed.rawValue,
+            "quality": quality.rawValue,
+            "multiviewQuality": multiviewQuality.rawValue,
+            "reportProgress": reportProgress,
+            "showCaptions": showCaptions
+        ]
+    }
+
+    func apply(_ values: [String: Any]) {
+        if let v = (values["catalogLanguage"] as? String).flatMap(CatalogLanguage.init(rawValue:)), v != catalogLanguage { catalogLanguage = v }
+        if let v = (values["audioLanguage"] as? String).flatMap(CatalogLanguage.init(rawValue:)), v != audioLanguage { audioLanguage = v }
+        if let v = (values["liveStart"] as? String).flatMap(LiveStart.init(rawValue:)), v != liveStart { liveStart = v }
+        if let v = (values["defaultFeed"] as? String).flatMap(DefaultFeed.init(rawValue:)), v != defaultFeed { defaultFeed = v }
+        if let v = (values["quality"] as? String).flatMap(StreamQuality.init(rawValue:)), v != quality { quality = v }
+        if let v = (values["multiviewQuality"] as? String).flatMap(StreamQuality.init(rawValue:)), v != multiviewQuality { multiviewQuality = v }
+        if let v = values["reportProgress"] as? Bool, v != reportProgress { reportProgress = v }
+        if let v = values["showCaptions"] as? Bool, v != showCaptions { showCaptions = v }
+    }
 }
 
 // MARK: - Saved multiview setups
