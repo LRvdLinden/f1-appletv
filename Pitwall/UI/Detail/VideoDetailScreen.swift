@@ -88,7 +88,7 @@ struct VideoDetailScreen: View {
                     .foregroundStyle(.secondary)
             } else {
                 Button { primaryAction() } label: {
-                    Label(selected.count > 1 ? "Multiview (\(selected.count))" : (current.isLive ? "Kijk live" : "Afspelen"),
+                    Label(selected.count > 1 ? String(localized: "Multiview (\(selected.count))") : (current.isLive ? String(localized: "Kijk live") : String(localized: "Afspelen")),
                           systemImage: selected.count > 1 ? "rectangle.split.2x2.fill" : "play.fill")
                 }
                 .buttonStyle(.borderedProminent)

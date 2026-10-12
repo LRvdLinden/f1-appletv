@@ -194,7 +194,7 @@ private struct FeedRow: View {
             }
             .buttonStyle(.plain)
             .disabled(isOpen && session.players.count == 1)
-            .help(isOpen ? "Sluit deze feed" : "Voeg toe aan multiview")
+            .help(isOpen ? LocalizedStringKey("Sluit deze feed") : LocalizedStringKey("Voeg toe aan multiview"))
         }
     }
 }

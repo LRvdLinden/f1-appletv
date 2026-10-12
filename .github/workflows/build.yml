@@ -46,7 +46,14 @@ jobs:
             -destination "${{ matrix.destination }}" \
             CODE_SIGNING_ALLOWED=NO CODE_SIGNING_REQUIRED=NO CODE_SIGN_IDENTITY="" \
             | tee build.log | grep -E "error:|warning: .*(isolat|Sendable)|BUILD (SUCCEEDED|FAILED)" || true
-          grep -q "BUILD SUCCEEDED" build.log
+          if ! grep -q "BUILD SUCCEEDED" build.log; then
+            # Surface the first compiler errors as one annotation (readable via the API).
+            ERRORS=$(grep -E "error:|fatal" build.log | grep -v "^note:" | sed "s|$GITHUB_WORKSPACE/||" | sort -u | head -60)
+            [ -z "$ERRORS" ] && ERRORS=$(tail -40 build.log)
+            ERRORS="${ERRORS//'%'/'%25'}"; ERRORS="${ERRORS//$'\n'/'%0A'}"
+            echo "::error title=${{ matrix.platform }} build failed::$ERRORS"
+            exit 1
+          fi
 
       - name: Upload log
         if: failure()
