@@ -1,0 +1,56 @@
+name: Build
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  build:
+    name: ${{ matrix.platform }}
+    runs-on: macos-15
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          - platform: iOS
+            destination: generic/platform=iOS Simulator
+          - platform: tvOS
+            destination: generic/platform=tvOS Simulator
+          - platform: macOS
+            destination: generic/platform=macOS
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Select newest Xcode
+        run: |
+          XCODE=$(ls -d /Applications/Xcode_*.app | sort -V | tail -1)
+          sudo xcode-select -s "$XCODE"
+          xcodebuild -version
+
+      - name: Install ${{ matrix.platform }} platform if missing
+        if: matrix.platform != 'macOS'
+        run: |
+          if ! xcodebuild -showsdks | grep -qi "${{ matrix.platform }} Simulator"; then
+            xcodebuild -downloadPlatform ${{ matrix.platform }}
+          fi
+
+      - name: Build
+        run: |
+          set -o pipefail
+          xcodebuild build \
+            -project Pitwall.xcodeproj \
+            -scheme Pitwall \
+            -configuration Debug \
+            -destination "${{ matrix.destination }}" \
+            CODE_SIGNING_ALLOWED=NO CODE_SIGNING_REQUIRED=NO CODE_SIGN_IDENTITY="" \
+            | tee build.log | grep -E "error:|warning: .*(isolat|Sendable)|BUILD (SUCCEEDED|FAILED)" || true
+          grep -q "BUILD SUCCEEDED" build.log
+
+      - name: Upload log
+        if: failure()
+        uses: actions/upload-artifact@v4
+        with:
+          name: build-log-${{ matrix.platform }}
+          path: build.log
