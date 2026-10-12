@@ -41,6 +41,12 @@ jobs:
             xcrun simctl launch "$UDID" nl.lrvdlinden.pitwall -AppleLanguages "(nl)" -AppleLocale nl_NL
             sleep 45
             xcrun simctl io "$UDID" screenshot "Screenshots/$1.png"
+            if [ "$2" = "appletvsimulator" ]; then
+              xcrun simctl terminate "$UDID" nl.lrvdlinden.pitwall || true
+              xcrun simctl launch "$UDID" nl.lrvdlinden.pitwall -AppleLanguages "(nl)" -AppleLocale nl_NL -initialTab account
+              sleep 20
+              xcrun simctl io "$UDID" screenshot "Screenshots/$1-account.png"
+            fi
             xcrun simctl shutdown "$UDID" || true
           }
           shoot appletv appletvsimulator "Apple TV 4K" tvOS

@@ -52,6 +52,6 @@ EN = {
 "Verbinden mislukt. Controleer de code op je Apple TV.": "Couldn't connect. Check the code on your Apple TV.", "Verbinden…": "Connecting…",
 "Verder vanaf %@": "Resume from %@", "Versie": "Version", "Voeg toe aan multiview": "Add to multiview", "Waar wil je beginnen?": "Where do you want to start?",
 "Wachten op je iPhone, iPad of Mac…": "Waiting for your iPhone, iPad or Mac…", "Wis selectie": "Clear selection", "Zoeken…": "Searching…",
-"· RONDE %@": "· ROUND %@", "Laden…": "Loading…", "Weergave": "View", "Speler": "Player",
+"Meer": "More", "· RONDE %@": "· ROUND %@", "Laden…": "Loading…", "Weergave": "View", "Speler": "Player",
 "Pitwall zoekt je Apple TV in het lokale netwerk om je F1 TV-login veilig door te geven.": "Pitwall looks for your Apple TV on the local network to pass on your F1 TV sign-in securely.",
 }

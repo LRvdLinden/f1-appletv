@@ -83,13 +83,29 @@ enum MenuIcon {
 #if !os(macOS)
 private struct TabLayout: View {
     @Environment(AppModel.self) private var model
+    /// Launch argument `-initialTab account|settings` (used for screenshots).
+    @State private var selection = UserDefaults.standard.string(forKey: "initialTab") ?? ""
+
+    /// tvOS has room for a handful of tabs; the rest goes under "Meer".
+    private var visibleCount: Int {
+        #if os(tvOS)
+        return model.menu.count > 4 ? 3 : model.menu.count
+        #else
+        return model.menu.count
+        #endif
+    }
 
     var body: some View {
-        TabView {
-            ForEach(model.menu) { ref in
+        TabView(selection: $selection) {
+            ForEach(model.menu.prefix(visibleCount)) { ref in
                 BrowseStack(root: ref)
                     .tabItem { Label(ref.title, systemImage: MenuIcon.symbol(for: ref.title)) }
                     .tag(ref.uri)
+            }
+            if visibleCount < model.menu.count {
+                MoreScreen(pages: Array(model.menu.dropFirst(visibleCount)))
+                    .tabItem { Label("Meer", systemImage: "ellipsis.circle") }
+                    .tag("more")
             }
             AccountScreen()
                 .tabItem { Label("Account", systemImage: "person.crop.circle") }
@@ -97,6 +113,27 @@ private struct TabLayout: View {
             SettingsScreen()
                 .tabItem { Label("Instellingen", systemImage: "gearshape") }
                 .tag("settings")
+        }
+        .onAppear {
+            if selection.isEmpty { selection = model.menu.first?.uri ?? "account" }
+        }
+    }
+}
+
+/// Remaining catalog sections (tvOS).
+private struct MoreScreen: View {
+    let pages: [PageRef]
+
+    var body: some View {
+        NavigationStack {
+            List(pages) { ref in
+                NavigationLink(value: ref) {
+                    Label(ref.title, systemImage: MenuIcon.symbol(for: ref.title))
+                }
+            }
+            .navigationTitle("Meer")
+            .navigationDestination(for: PageRef.self) { PageScreen(ref: $0) }
+            .navigationDestination(for: CatalogItem.self) { VideoDetailScreen(item: $0) }
         }
     }
 }

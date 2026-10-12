@@ -682,6 +682,16 @@
         }
       }
     },
+    "Meer": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "More"
+          }
+        }
+      }
+    },
     "Mijn setup": {
       "localizations": {
         "en": {
