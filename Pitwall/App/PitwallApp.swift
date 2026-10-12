@@ -12,11 +12,11 @@ struct PitwallApp: App {
     }
 
     var body: some Scene {
+        #if os(macOS)
         WindowGroup {
             RootView()
                 .environment(model)
         }
-        #if os(macOS)
         .defaultSize(width: 1280, height: 820)
         .commands {
             CommandGroup(replacing: .newItem) {}
@@ -35,6 +35,11 @@ struct PitwallApp: App {
             SettingsScreen()
                 .environment(model)
                 .frame(width: 560, height: 620)
+        }
+        #else
+        WindowGroup {
+            RootView()
+                .environment(model)
         }
         #endif
     }

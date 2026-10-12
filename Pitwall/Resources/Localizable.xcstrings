@@ -1,0 +1,1216 @@
+{
+  "sourceLanguage": "nl",
+  "version": "1.0",
+  "strings": {
+    "10 s terug": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Back 10 s"
+          }
+        }
+      }
+    },
+    "10 s vooruit": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Forward 10 s"
+          }
+        }
+      }
+    },
+    "Abonnement": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Subscription"
+          }
+        }
+      }
+    },
+    "Account": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Account"
+          }
+        }
+      }
+    },
+    "Afspelen": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Play"
+          }
+        }
+      }
+    },
+    "Afspelen mislukt.": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Playback failed."
+          }
+        }
+      }
+    },
+    "Alleen deze feed": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Only this feed"
+          }
+        }
+      }
+    },
+    "Alles": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "See all"
+          }
+        }
+      }
+    },
+    "Altijd vragen": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Always ask"
+          }
+        }
+      }
+    },
+    "Annuleren": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Cancel"
+          }
+        }
+      }
+    },
+    "Apple TV koppelen": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Link Apple TV"
+          }
+        }
+      }
+    },
+    "Apple TV's in dit netwerk": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apple TVs on this network"
+          }
+        }
+      }
+    },
+    "Automatisch": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Automatic"
+          }
+        }
+      }
+    },
+    "BINNENKORT": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "SOON"
+          }
+        }
+      }
+    },
+    "Begint %@": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Starts %@"
+          }
+        }
+      }
+    },
+    "Beide apparaten moeten op hetzelfde wifi-netwerk zitten.": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Both devices need to be on the same Wi-Fi network."
+          }
+        }
+      }
+    },
+    "Bewaart de geopende feeds en de indeling, zodat je ze bij een volgende sessie in één keer opent.": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Saves the open feeds and layout so you can open them in one go next session."
+          }
+        }
+      }
+    },
+    "Broncode en changelog": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Source code and changelog"
+          }
+        }
+      }
+    },
+    "Code": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Code"
+          }
+        }
+      }
+    },
+    "Code op je tv": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Code on your TV"
+          }
+        }
+      }
+    },
+    "Commentaar": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Commentary"
+          }
+        }
+      }
+    },
+    "Commentaar in je taal wordt gekozen als F1 TV het voor die sessie aanbiedt.": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Commentary in your language is picked when F1 TV offers it for that session."
+          }
+        }
+      }
+    },
+    "De Apple TV heeft niet bevestigd. Controleer de code.": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "The Apple TV didn't confirm. Check the code."
+          }
+        }
+      }
+    },
+    "De inlogpagina kon niet laden. Controleer je verbinding.": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "The sign-in page couldn't load. Check your connection."
+          }
+        }
+      }
+    },
+    "Deze stream is niet beschikbaar voor je abonnement.": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "This stream isn't available with your subscription."
+          }
+        }
+      }
+    },
+    "Eén feed": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Single feed"
+          }
+        }
+      }
+    },
+    "F1 TV gaf een fout (HTTP %lld).": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "F1 TV returned an error (HTTP %lld)."
+          }
+        }
+      }
+    },
+    "F1 TV heeft je sessie beëindigd. Log opnieuw in.": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "F1 TV ended your session. Please sign in again."
+          }
+        }
+      }
+    },
+    "F1 TV laden…": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Loading F1 TV…"
+          }
+        }
+      }
+    },
+    "F1 TV weigerde het verzoek (%@).": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "F1 TV rejected the request (%@)."
+          }
+        }
+      }
+    },
+    "F1 TV-account": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "F1 TV account"
+          }
+        }
+      }
+    },
+    "Feeds": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Feeds"
+          }
+        }
+      }
+    },
+    "Feeds tonen of verbergen": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Show or hide feeds"
+          }
+        }
+      }
+    },
+    "GEPLAND": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "SCHEDULED"
+          }
+        }
+      }
+    },
+    "Ga naar Account › Apple TV koppelen.": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Go to Account › Link Apple TV."
+          }
+        }
+      }
+    },
+    "Het antwoord van F1 TV kon niet worden gelezen.": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "F1 TV's response couldn't be read."
+          }
+        }
+      }
+    },
+    "Hier is nog niets te zien.": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Nothing to see here yet."
+          }
+        }
+      }
+    },
+    "Hoofd + 1": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Main + 1"
+          }
+        }
+      }
+    },
+    "Hoofd + 3": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Main + 3"
+          }
+        }
+      }
+    },
+    "Indeling": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Layout"
+          }
+        }
+      }
+    },
+    "Ingelogd als %@": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Signed in as %@"
+          }
+        }
+      }
+    },
+    "Inloggen bij F1": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sign in to F1"
+          }
+        }
+      }
+    },
+    "Inloggen duurde te lang. Probeer het opnieuw.": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sign-in took too long. Please try again."
+          }
+        }
+      }
+    },
+    "Inloggen met F1 TV": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sign in with F1 TV"
+          }
+        }
+      }
+    },
+    "Inloggen om te kijken": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sign in to watch"
+          }
+        }
+      }
+    },
+    "Inloggen via je iPhone, iPad of Mac": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sign in with your iPhone, iPad or Mac"
+          }
+        }
+      }
+    },
+    "Installeer Pitwall op je iPhone, iPad of Mac en log daar in met F1 TV.": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Install Pitwall on your iPhone, iPad or Mac and sign in with F1 TV there."
+          }
+        }
+      }
+    },
+    "Instellingen": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Settings"
+          }
+        }
+      }
+    },
+    "Internationaal": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "International"
+          }
+        }
+      }
+    },
+    "Je Apple TV is ingelogd.": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Your Apple TV is signed in."
+          }
+        }
+      }
+    },
+    "Je F1 TV-sessie is verlopen. Log opnieuw in.": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Your F1 TV session has expired. Please sign in again."
+          }
+        }
+      }
+    },
+    "Je logt in op de officiële F1-pagina. Pitwall slaat alleen de sessie op in je sleutelhanger, nooit je wachtwoord.": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "You sign in on the official F1 page. Pitwall only keeps the session in your keychain, never your password."
+          }
+        }
+      }
+    },
+    "Kies deze Apple TV en vul de code in.": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Choose this Apple TV and enter the code."
+          }
+        }
+      }
+    },
+    "Kies er meerdere voor multiview": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Pick several for multiview"
+          }
+        }
+      }
+    },
+    "Kies tot 9 feeds. De feed met het luidsprekertje heeft geluid; kies een tegel om het geluid te wisselen.": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Pick up to 9 feeds. The feed with the speaker icon has sound; select a tile to switch audio."
+          }
+        }
+      }
+    },
+    "Kijk live": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Watch live"
+          }
+        }
+      }
+    },
+    "Kijkvoortgang bijhouden bij F1 TV": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sync watch progress with F1 TV"
+          }
+        }
+      }
+    },
+    "Klaar": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Done"
+          }
+        }
+      }
+    },
+    "Koppelen": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Link"
+          }
+        }
+      }
+    },
+    "Kwaliteit": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Quality"
+          }
+        }
+      }
+    },
+    "Kwaliteit in multiview": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Multiview quality"
+          }
+        }
+      }
+    },
+    "Laden…": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Loading…"
+          }
+        }
+      }
+    },
+    "Land": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Country"
+          }
+        }
+      }
+    },
+    "Live": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Live"
+          }
+        }
+      }
+    },
+    "Live-sessies starten": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Start live sessions"
+          }
+        }
+      }
+    },
+    "Log in met F1 TV": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sign in with F1 TV"
+          }
+        }
+      }
+    },
+    "Log in met je F1 TV-account om dit te bekijken.": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sign in with your F1 TV account to watch this."
+          }
+        }
+      }
+    },
+    "Maak hoofdfeed": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Make main feed"
+          }
+        }
+      }
+    },
+    "Mijn setup": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "My setup"
+          }
+        }
+      }
+    },
+    "Multiview": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Multiview"
+          }
+        }
+      }
+    },
+    "Multiview (%lld)": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Multiview (%lld)"
+          }
+        }
+      }
+    },
+    "Multiview-setups": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Multiview setups"
+          }
+        }
+      }
+    },
+    "Naam": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Name"
+          }
+        }
+      }
+    },
+    "Naast elkaar": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Side by side"
+          }
+        }
+      }
+    },
+    "Nieuwe code": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "New code"
+          }
+        }
+      }
+    },
+    "Nog geen setups. Sla er een op vanuit de multiview-bediening.": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "No setups yet. Save one from the multiview controls."
+          }
+        }
+      }
+    },
+    "Ondertitels": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Subtitles"
+          }
+        }
+      }
+    },
+    "Ongeldige link.": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Invalid link."
+          }
+        }
+      }
+    },
+    "Open Pitwall op je Apple TV en ga naar Account. Kies hieronder de Apple TV en vul de code in die op je tv staat.": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Open Pitwall on your Apple TV and go to Account. Choose the Apple TV below and enter the code shown on your TV."
+          }
+        }
+      }
+    },
+    "Opgeslagen setups": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Saved setups"
+          }
+        }
+      }
+    },
+    "Opnieuw": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Retry"
+          }
+        }
+      }
+    },
+    "Opnieuw proberen": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Try again"
+          }
+        }
+      }
+    },
+    "Opslaan": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Save"
+          }
+        }
+      }
+    },
+    "Over": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "About"
+          }
+        }
+      }
+    },
+    "Pauzeren": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Pause"
+          }
+        }
+      }
+    },
+    "Pitwall gebruikt je eigen F1 TV-abonnement. Welke streams, onboards en kwaliteit je ziet hangt af van dat abonnement.": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Pitwall uses your own F1 TV subscription. Which streams, onboards and quality you get depends on that subscription."
+          }
+        }
+      }
+    },
+    "Pitwall is een onofficiële app en is niet verbonden aan de Formula 1-bedrijven. F1, FORMULA ONE, FORMULA 1 en verwante merken zijn handelsmerken van Formula One Licensing B.V.": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Pitwall is an unofficial app and is not associated with the Formula 1 companies. F1, FORMULA ONE, FORMULA 1 and related marks are trade marks of Formula One Licensing B.V."
+          }
+        }
+      }
+    },
+    "Pitwall is onofficieel en niet verbonden aan de Formula 1-bedrijven. Je hebt een eigen F1 TV-abonnement nodig.": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Pitwall is unofficial and not associated with the Formula 1 companies. You need your own F1 TV subscription."
+          }
+        }
+      }
+    },
+    "Pitwall zoekt je Apple TV in het lokale netwerk om je F1 TV-login veilig door te geven.": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Pitwall looks for your Apple TV on the local network to pass on your F1 TV sign-in securely."
+          }
+        }
+      }
+    },
+    "Programma": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Schedule"
+          }
+        }
+      }
+    },
+    "Sessie geldig tot": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Session valid until"
+          }
+        }
+      }
+    },
+    "Sessie vernieuwen": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Refresh session"
+          }
+        }
+      }
+    },
+    "Setup opslaan": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Save setup"
+          }
+        }
+      }
+    },
+    "Setups": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Setups"
+          }
+        }
+      }
+    },
+    "Sluit deze feed": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Close this feed"
+          }
+        }
+      }
+    },
+    "Sluit feed": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Close feed"
+          }
+        }
+      }
+    },
+    "Sluiten": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Close"
+          }
+        }
+      }
+    },
+    "Speler": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Player"
+          }
+        }
+      }
+    },
+    "Standaardfeed": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Default feed"
+          }
+        }
+      }
+    },
+    "Status": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Status"
+          }
+        }
+      }
+    },
+    "Stream voorbereiden…": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Preparing stream…"
+          }
+        }
+      }
+    },
+    "Synchroniseer": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sync"
+          }
+        }
+      }
+    },
+    "Taal": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Language"
+          }
+        }
+      }
+    },
+    "Taal catalogus": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Catalog language"
+          }
+        }
+      }
+    },
+    "Teamradio / omgevingsgeluid": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Team radio / natural sound"
+          }
+        }
+      }
+    },
+    "Tik op een feed om te wisselen, of op + om hem naast de andere te zetten.": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tap a feed to switch, or + to add it alongside the others."
+          }
+        }
+      }
+    },
+    "Uitloggen": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sign out"
+          }
+        }
+      }
+    },
+    "Uitloggen bij F1 TV?": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sign out of F1 TV?"
+          }
+        }
+      }
+    },
+    "Vanaf begin": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "From start"
+          }
+        }
+      }
+    },
+    "Vanaf het begin": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "From the beginning"
+          }
+        }
+      }
+    },
+    "Verbinden mislukt. Controleer de code op je Apple TV.": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Couldn't connect. Check the code on your Apple TV."
+          }
+        }
+      }
+    },
+    "Verbinden…": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Connecting…"
+          }
+        }
+      }
+    },
+    "Verder vanaf %@": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Resume from %@"
+          }
+        }
+      }
+    },
+    "Versie": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Version"
+          }
+        }
+      }
+    },
+    "Voeg toe aan multiview": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Add to multiview"
+          }
+        }
+      }
+    },
+    "Waar wil je beginnen?": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Where do you want to start?"
+          }
+        }
+      }
+    },
+    "Wachten op je iPhone, iPad of Mac…": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Waiting for your iPhone, iPad or Mac…"
+          }
+        }
+      }
+    },
+    "Weergave": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "View"
+          }
+        }
+      }
+    },
+    "Wis selectie": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Clear selection"
+          }
+        }
+      }
+    },
+    "Zoeken…": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Searching…"
+          }
+        }
+      }
+    },
+    "· RONDE %@": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "· ROUND %@"
+          }
+        }
+      }
+    }
+  }
+}

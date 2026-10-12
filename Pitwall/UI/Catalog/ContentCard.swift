@@ -39,7 +39,7 @@ struct ItemLink<Label: View>: View {
             if item.race?.isSession == true || item.isLive {
                 NavigationLink(value: item, label: label)
             } else {
-                Button { model.play(item) } label: label
+                Button(action: { model.play(item) }, label: label)
             }
         case nil:
             label()
